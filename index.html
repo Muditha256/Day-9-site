@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+</head>
+<body style="background-color:aliceblue;">
+
+    <div class="container m-2 bg-primary-subtle p-3 position">
+        <div class="d-flex" role="search">
+            <input id="txtInput" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit" onclick="searchCountry()">Search</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <img class="img-thumbnail w-25"  id="flagImg" src="" alt="">
+            <h1 id="name"></h1>
+            <p id="officialName"> </p>
+            <p id="region"></p>
+            <p id="capital"></p>
+            <p id="population"> </p>
+        </div>
+    </div>
+
+    <h1 class="text-center bg-black text-white p-3 mb-3 fw-bolder">All
+        Countries</h1>
+    
+
+    <div class="container vh-100 ">
+     <div class="col-12">
+                    <div id="card-row" class="row">
+                    </div>
+     </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
